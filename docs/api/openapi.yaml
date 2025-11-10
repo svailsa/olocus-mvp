@@ -1,0 +1,72 @@
+# OpenAPI Specification for Olocus Protocol v1.0
+# Status: 🔴 Not Started
+
+openapi: 3.0.3
+info:
+  title: Olocus Protocol API
+  description: |
+    Privacy-preserving location tracking and attestation protocol.
+    
+    This specification is currently a placeholder and needs to be completed
+    with all endpoints, schemas, and security definitions.
+  version: 1.0.0
+  contact:
+    name: Olocus Protocol Team
+    url: https://olocus.io
+    
+servers:
+  - url: https://api.olocus.io/v1
+    description: Production server
+  - url: https://api-staging.olocus.io/v1
+    description: Staging server
+    
+# TO BE ADDED:
+
+# paths:
+#   /health:
+#     get:
+#       summary: Health check endpoint
+#       
+#   /anchors:
+#     post:
+#       summary: Submit daily anchor
+#       
+#   /attestations:
+#     post:
+#       summary: Request attestation
+#     get:
+#       summary: Retrieve attestations
+#       
+#   /friendships:
+#     post:
+#       summary: Create friendship request
+#     put:
+#       summary: Accept/reject friendship
+#       
+#   /marketplace/listings:
+#     get:
+#       summary: Browse marketplace
+#     post:
+#       summary: Create listing
+
+# components:
+#   schemas:
+#     DailyAnchor:
+#       type: object
+#     
+#     AttestationRequest:
+#       type: object
+#     
+#     FriendshipRequest:
+#       type: object
+#     
+#     LocationCredential:
+#       type: object
+#     
+#     Error:
+#       type: object
+#       
+#   securitySchemes:
+#     EdDSA:
+#       type: http
+#       scheme: signature
